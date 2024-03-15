@@ -7,6 +7,7 @@ import translationworkflow.model.TranslationWorkflowInput;
 import translationworkflow.model.TranslationWorkflowOutput;
 
 public class Starter {
+
   public static void main(String[] args) throws Exception {
 
     WorkflowServiceStubs service = WorkflowServiceStubs.newLocalServiceStubs();
@@ -15,7 +16,7 @@ public class Starter {
 
     WorkflowOptions options = WorkflowOptions.newBuilder()
         .setWorkflowId("translation-workflow")
-        .setTaskQueue("translation-tasks")
+        .setTaskQueue(Constants.TASK_QUEUE)
         .build();
 
     TranslationWorkflow workflow = client.newWorkflowStub(TranslationWorkflow.class, options);

@@ -12,12 +12,16 @@ public class TranslationWorker {
     WorkflowClient client = WorkflowClient.newInstance(service);
     WorkerFactory factory = WorkerFactory.newInstance(client);
 
-    Worker worker = factory.newWorker("translation-tasks");
+    Worker worker = factory.newWorker(Constants.TASK_QUEUE);
 
     worker.registerWorkflowImplementationTypes(TranslationWorkflowImpl.class);
 
     worker.registerActivitiesImplementations(new TranslationActivitiesImpl());
 
     factory.start();
+
+//    factory.getWorkflowClient().fetchHistory("wfId");
+
+//    factory.getWorkflowClient().getWorkflowServiceStubs().blockingStub().listWorkflowExecutions()....
   }
 }

@@ -44,7 +44,7 @@ class as an input parameter. Also notice how that function returns a
 
 ## Part C: Run the Translation Workflow
 
-To run the workflow:
+To run the myWorkflow:
 
 1. Ensure that your Translation Microservice is running in a separate. See the
    prerequisites at the top of this file for instructions.

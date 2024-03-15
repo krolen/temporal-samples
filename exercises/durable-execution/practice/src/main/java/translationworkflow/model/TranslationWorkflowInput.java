@@ -1,5 +1,6 @@
 package translationworkflow.model;
 
+
 public class TranslationWorkflowInput {
   private String name;
   private String languageCode;
@@ -26,5 +27,13 @@ public class TranslationWorkflowInput {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
+  }
+
+  @Override
+  public String toString() {
+    return "TranslationWorkflowInput{" +
+            "name='" + name + '\'' +
+            ", languageCode='" + languageCode + '\'' +
+            '}';
   }
 }

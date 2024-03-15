@@ -46,7 +46,7 @@ does by using the Web UI to interpret the Event History.
 
 Open the Web UI and navigate to the detail page for the Workflow
 Execution you just ran, which has the Workflow Type `PizzaWorkflow`
-and Workflow ID `pizza-workflow-order-XD001`).
+and Workflow ID `pizza-myWorkflow-order-XD001`).
 
 If the detail page still shows a status of Running, wait a few seconds
 and refresh the page. Once the page shows a status of Completed, use

@@ -18,4 +18,11 @@ public class TranslationActivityOutput {
   public void setTranslation(String translation) {
     this.translation = translation;
   }
+
+  @Override
+  public String toString() {
+    return "TranslationActivityOutput{" +
+            "translation='" + translation + '\'' +
+            '}';
+  }
 }

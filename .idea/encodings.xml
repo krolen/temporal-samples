@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/exercises/debug-activity/practice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/debug-activity/practice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/debug-activity/solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/debug-activity/solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/durable-execution/practice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/durable-execution/practice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/durable-execution/solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/durable-execution/solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/parallel-user-input/practice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/parallel-user-input/practice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/testing-code/practice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/testing-code/practice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/testing-code/solution/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercises/testing-code/solution/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/age-estimation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/age-estimation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/using-classes-for-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/samples/using-classes-for-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utilities/microservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utilities/microservice/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

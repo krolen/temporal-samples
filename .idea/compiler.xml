@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="testing-code-practice" />
+        <module name="pizza-workflow-practice" />
+        <module name="durable-execution-practice" />
+        <module name="durable-execution-solution" />
+        <module name="pizza-workflow-solution" />
+        <module name="age-estimation-sample" />
+        <module name="using-classes-solution" />
+        <module name="translation-microservice" />
+        <module name="parallel-user-input" />
+        <module name="testing-code-solution" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

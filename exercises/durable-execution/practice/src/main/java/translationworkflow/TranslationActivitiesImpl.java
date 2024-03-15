@@ -12,6 +12,7 @@ import io.temporal.activity.Activity;
 import io.temporal.failure.ApplicationFailure;
 import java.net.HttpURLConnection;
 
+import io.temporal.workflow.Workflow;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import translationworkflow.model.TranslationActivityInput;
@@ -19,19 +20,19 @@ import translationworkflow.model.TranslationActivityOutput;
 
 public class TranslationActivitiesImpl implements TranslationActivities {
 
-  // TODO: Define a logger for your Activities here
+  private static final Logger LOG = Workflow.getLogger(TranslationWorkflowImpl.class);
 
   @Override
   public TranslationActivityOutput translateTerm(TranslationActivityInput input) {
     String term = input.getTerm();
     String lang = input.getLanguageCode();
 
-    // TODO: Add an info log statement here with the string [ACTIVITY INVOKED]
-    // at the beginning along with the name of the Activity and parameters passed
+    LOG.info("ACTIVITY INVOKED with param: {}", input);
+
 
     // construct the URL, with supplied input parameters, for accessing the
     // microservice
-    URL url = null;
+    URL url;
     try {
       String baseUrl = "http://localhost:9999/translate?term=%s&lang=%s";
       url = URI.create(
@@ -40,7 +41,7 @@ public class TranslationActivitiesImpl implements TranslationActivities {
               URLEncoder.encode(lang, "UTF-8")))
           .toURL();
     } catch (IOException e) {
-      // TODO: Add an error log statement here at the error level about the exception
+      LOG.error("Error executing activity", e);
       throw Activity.wrap(e);
     }
 
@@ -84,20 +85,18 @@ public class TranslationActivitiesImpl implements TranslationActivities {
         }
 
         errorReader.close();
-
         connection.disconnect();
 
-        // TODO: Add an error log statement here detailing the exception
-        
+        LOG.error("Error communicating to microservice: {}", errorResponse);
+
         throw ApplicationFailure.newFailure(errorResponse.toString(), IOException.class.getName());
       }
 
     } catch (IOException e) {
       throw Activity.wrap(e);
     }
-    // TODO: Add a debug log statement here stating the Translation was successful
-    // include the output
-    
+
+    LOG.debug("Activity execution was successful, output: {}", result);
     return result;
   }
 

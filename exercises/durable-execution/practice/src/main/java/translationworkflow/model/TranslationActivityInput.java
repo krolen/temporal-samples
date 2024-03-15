@@ -28,4 +28,12 @@ public class TranslationActivityInput {
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
   }
+
+  @Override
+  public String toString() {
+    return "TranslationActivityInput{" +
+            "term='" + term + '\'' +
+            ", languageCode='" + languageCode + '\'' +
+            '}';
+  }
 }

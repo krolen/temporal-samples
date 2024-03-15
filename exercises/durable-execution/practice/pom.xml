@@ -15,6 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <temporal.version>1.23.0</temporal.version>
     </properties>
 
     <dependencies>
@@ -22,7 +23,7 @@
         <dependency>
             <groupId>io.temporal</groupId>
             <artifactId>temporal-sdk</artifactId>
-            <version>1.20.1</version>
+            <version>${temporal.version}</version>
         </dependency>
 
         <dependency>
@@ -40,7 +41,7 @@
         <dependency>
             <groupId>io.temporal</groupId>
             <artifactId>temporal-testing</artifactId>
-            <version>1.20.1</version>
+            <version>${temporal.version}</version>
             <scope>test</scope>
         </dependency>  
 
